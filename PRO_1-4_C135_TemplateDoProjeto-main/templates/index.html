@@ -1,0 +1,75 @@
+<!-- há um modelo inicial para bootstrap -->
+<!--começo do modelo-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags necessárias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+
+    <!--Rede de fornecimento de conteúdo do Jquery via google-->
+        
+
+    <title>Análise de Sentimentos</title>
+  </head>
+  <body>
+
+    <div style="height: 300px ;background-color: #2C313E">
+    
+      <div class="row">
+        <div class="col-9"><h1 style="padding: 30px 10px; color:white; font-family:cursive">&nbspAVALIAÇÃO DE CLIENTES</h1></div>
+        <div class="col" style="padding-top: 40px;"><h4 id="date" style="color:white; font-family:cursive; font-size:medium;">Data: </h4></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><img src = "static\assets\products\mobile.png" alt = "Esta é uma imagem de um Smartphone" width = 250 height = 300 style = "border:none; margin-left: 40px; border-top-left-radius: 30px; border-top-right-radius: 30px;"></div>
+        <div class="col"><img src = "static\assets\products\camera.png" alt = "Esta é uma imagem de uma Câmera Digital" width = 250 height = 300 style = "border:none; margin-left: 40px; border-top-left-radius: 30px; border-top-right-radius: 30px;"></div>
+        <div class="col"><img src = "static\assets\products\headphones.png" alt = "Esta é uma imagem de um Fone de Ouvido" width = 250 height = 300 style = "border:none; margin-left:40px; border-top-left-radius: 30px; border-top-right-radius: 30px"></div>
+        <div class="col"><img src = "static\assets\products\video games.png" alt = "Esta é uma imagem de um Videogame" width = 250 height = 300 style = "border:none; margin-left:40px; border-top-left-radius: 30px; border-top-right-radius: 30px"></div>
+      </div>
+
+      <div class="row" style="margin-top: -20px;">
+        <div class="col"><input id="m_textbox" type = "text" placeholder = "Escreva sua Avaliação do Smartphone" style = "border:2px solid black ; text-align: center; border-radius: 25px; height: 100px; width: 250px; margin-left: 40px; font-size:small;"></div>
+        <div class="col"><input id="c_textbox" type = "text" placeholder = "Escreva sua Avaliação da Câmera Digital" style = "border:2px solid black ; text-align: center; border-radius: 25px; height: 100px; width: 250px; margin-left: 40px; font-size:small;"></div>
+        <div class="col"><input id="h_textbox" type = "text" placeholder = "Escreva sua Avaliação do Fone de Ouvido" style = "border:2px solid black ; text-align: center; border-radius: 25px; height: 100px; width: 250px; margin-left: 40px; font-size:small;"></div>
+        <div class="col"><input id="v_textbox" type = "text" placeholder = "Escreva sua Avaliação do Videogame" style = "border:2px solid black ; text-align: center; border-radius: 25px; height: 100px; width: 250px; margin-left: 40px; font-size:small;"></div>
+      </div>
+
+      <div class="row" style="margin-top:10px" align="center">
+        <div class="col"><button id="m_button" style="background-color:#F98011; color:white; font-family:monospace; width:150px; height:50px; border-radius:30px; border:none; font-size: large; font-weight: bold;">Enviar</button></div>
+        <div class="col"><button id="c_button" style="background-color:#F98011; color:white; font-family:monospace; width:150px; height:50px; border-radius:30px; border:none; font-size: large; font-weight: bold;">Enviar</button></div>
+        <div class="col"><button id="h_button" style="background-color:#F98011; color:white; font-family:monospace; width:150px; height:50px; border-radius:30px; border:none; font-size: large; font-weight: bold;">Enviar</button></div>
+        <div class="col"><button id="v_button" style="background-color:#F98011; color:white; font-family:monospace; width:150px; height:50px; border-radius:30px; border:none; font-size: large; font-weight: bold;">Enviar</button></div>
+      </div>
+
+      <div class="row" align="center" style="margin-top: 10px;">
+        <div class="col"><button id="save_button" style="background-color:#38f911; color:white; font-family:monospace; width:150px; height:50px; border-radius:30px; border:none; font-size: large; font-weight: bold;">Salvar</button></div>
+      </div>
+
+      <div class="row" style="margin-top:10px" align="center">
+        <div class="col"><img id="m_emoji" src = "" width = 80 style="display: none;"></div>
+        <div class="col"><img id="c_emoji" src = "" width = 80 style="display: none;"></div>
+        <div class="col"><img id="h_emoji" src = "" width = 80 style="display: none;"></div>
+        <div class="col"><img id="v_emoji" src = "" width = 80 style="display: none;"></div>
+      </div>
+
+      <div class="row" align="center">
+        <div class="col"><h6 id="m_emotion" style="display: none;"></h6></div>
+        <div class="col"><h6 id="c_emotion" style="display: none;"></h6></div>
+        <div class="col"><h6 id="h_emotion" style="display: none;"></h6></div>
+        <div class="col"><h6 id="v_emotion" style="display: none;"></h6></div>
+      </div>
+
+    </div>
+
+
+        <!--Arquivo JS -->
+    <script src="static\js\index.js"></script>
+
+  </body>
+</html>
